@@ -1,5 +1,5 @@
 /* DexBuilder
- * Copyright (C) 2021 LSPosed
+ * Copyright (C) 2021 LFPosed
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published by
@@ -16,7 +16,7 @@
  */
 /*
  * Copyright (C) 2018 The Android Open Source Project
- * Modifications copyright (C) 2021 LSPosed Developers
+ * Modifications copyright (C) 2021 LFPosed Developers
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -423,11 +423,11 @@ void GenerateHooker(const string &outdir) {
                  TypeDescriptor::Long,
                   TypeDescriptor::FromClassname("io.github.lsposed.Test")};
 
-  ClassBuilder cbuilder{dex_file.MakeClass("LSPHooker")};
+  ClassBuilder cbuilder{dex_file.MakeClass("LFPHooker")};
   cbuilder.set_source_file("dex_testcase_generator.cc#GenerateHooker");
 
   auto hooker_type =
-      TypeDescriptor::FromClassname("org.lsposed.lspd.hooker.LspHooker");
+      TypeDescriptor::FromClassname("org.lsposed.lspd.hooker.LfpHooker");
 
   auto *hooker_field = cbuilder.CreateField("hooker", hooker_type)
                            .access_flags(dex::kAccStatic)

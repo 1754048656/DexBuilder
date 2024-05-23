@@ -1,5 +1,5 @@
 /* DexBuilder
- * Copyright (C) 2021 LSPosed
+ * Copyright (C) 2021 LFPosed
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published by
@@ -16,7 +16,7 @@
  */
 /*
  * Copyright (C) 2018 The Android Open Source Project
- * Modifications copyright (C) 2021 LSPosed Developers
+ * Modifications copyright (C) 2021 LFPosed Developers
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.

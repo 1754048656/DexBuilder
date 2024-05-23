@@ -423,11 +423,11 @@ void GenerateHooker(const string &outdir) {
                  TypeDescriptor::Long,
                   TypeDescriptor::FromClassname("io.github.lsposed.Test")};
 
-  ClassBuilder cbuilder{dex_file.MakeClass("LSPHooker")};
+  ClassBuilder cbuilder{dex_file.MakeClass("LFPHooker")};
   cbuilder.set_source_file("dex_testcase_generator.cc#GenerateHooker");
 
   auto hooker_type =
-      TypeDescriptor::FromClassname("org.lsposed.lspd.hooker.LspHooker");
+      TypeDescriptor::FromClassname("org.lsposed.lspd.hooker.LfpHooker");
 
   auto *hooker_field = cbuilder.CreateField("hooker", hooker_type)
                            .access_flags(dex::kAccStatic)
